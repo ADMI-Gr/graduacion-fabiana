@@ -46,7 +46,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opa
 
 /* ---------- La carta ---------- */
 main{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:28px;padding:clamp(20px,6vw,64px) 12px 72px}
-.hoja{position:relative;width:min(100%,600px);padding:clamp(48px,10vw,76px) clamp(26px,7vw,64px) clamp(44px,9vw,68px);border-radius:3px;
+.hoja{position:relative;width:min(100%,600px);container-type:inline-size;padding:clamp(48px,10vw,76px) clamp(26px,7vw,64px) clamp(44px,9vw,68px);border-radius:3px;
   background:linear-gradient(170deg,#FCF7EE 0%,#F6EDDD 55%,#EFE3CE 100%);
   box-shadow:0 50px 100px -30px rgba(0,0,0,.75),0 18px 40px -20px rgba(0,0,0,.6);
   display:flex;flex-direction:column;align-items:center;gap:30px;text-align:center;will-change:transform}
@@ -62,8 +62,8 @@ main{position:relative;z-index:2;display:flex;flex-direction:column;align-items:
 .laurel{width:118px;height:118px}
 .laurel svg{width:100%;height:100%;display:block}
 .invita{margin:0;font-style:italic;font-size:clamp(23px,5.4vw,32px);line-height:1.25;color:var(--tinta);text-wrap:balance}
-.nombre{margin:0;font-family:var(--f-firma);font-weight:400;font-size:clamp(34px,10.6vw,66px);line-height:1.2;display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 0 .6px rgba(110,74,28,.6))}
-.nombre .linea{display:block;padding:.32em .4em .34em;margin:-.22em -.1em -.12em}
+.nombre{margin:0;font-family:var(--f-firma);font-weight:400;font-size:clamp(34px,10.6vw,62px);font-size:clamp(28px,10.5cqi,62px);line-height:1.2;display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 0 .6px rgba(110,74,28,.6))}
+.nombre .linea{display:block;white-space:nowrap;padding:.32em .4em .34em;margin:-.22em -.1em -.12em}
 .filete{display:flex;align-items:center;gap:12px}
 .filete span{display:block;width:clamp(56px,16vw,110px);height:1px;background:linear-gradient(90deg,rgba(184,137,74,0),#B8894A)}
 .filete span:last-child{background:linear-gradient(90deg,#B8894A,rgba(184,137,74,0))}
