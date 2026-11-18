@@ -5,7 +5,10 @@ Invitación interactiva de graduación de **Fabiana Lucila Chávez Morataya**.
 - 4 de diciembre de 2026 · 7:00 p. m.
 - Casino Migueleño
 
-Ver en línea: https://admi-gr.github.io/graduacion-fabiana/
+Ver en línea:
+
+- Versión sobre: https://admi-gr.github.io/graduacion-fabiana/
+- Versión carta: https://admi-gr.github.io/graduacion-fabiana/carta/ (la carta sale del sobre y la invitación se lee sobre papel marfil)
 
 ## Qué hace
 
