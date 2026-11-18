@@ -10,6 +10,10 @@ Ver en línea:
 - Versión sobre: https://admi-gr.github.io/graduacion-fabiana/
 - Versión carta: https://admi-gr.github.io/graduacion-fabiana/carta/ (la carta sale del sobre y la invitación se lee sobre papel marfil)
 
+## Propuestas de foto
+
+Agrega al final de la dirección `#arco`, `#medallon`, `#impresa` o `#difuminado` para ver cada marco de la foto (sin nada se muestra `arco`). Funciona en las dos versiones, por ejemplo `.../carta/#impresa`.
+
 ## Qué hace
 
 - Sobre con sello de cera dorado que se abre al tocarlo (se abre solo a los 7 segundos).

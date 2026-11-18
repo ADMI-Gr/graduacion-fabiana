@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-foto="arco">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -137,6 +137,27 @@ main{position:relative;z-index:2;display:flex;flex-direction:column;align-items:
 @keyframes parpadeo{0%,100%{opacity:.45}50%{opacity:1}}
 .roto .pista{animation:none;opacity:0}
 
+/* ---------- Foto: cuatro propuestas (#arco, #medallon, #impresa, #difuminado) ---------- */
+.foto{margin:0;display:flex;justify-content:center;width:100%}
+.foto-cuadro{position:relative}
+.foto img{display:block;width:100%;height:100%;object-fit:cover}
+.foto .foto-medallon,.foto .foto-laurel,.foto .foto-esq{display:none}
+[data-foto="arco"] .foto-cuadro{width:min(78%,330px);aspect-ratio:4/5;padding:5px;border-radius:50% 50% 4px 4px/40% 40% 4px 4px;background:linear-gradient(135deg,#9A6E32,#F1D79A 30%,#C99A4E 55%,#F6E3B0 75%,#9A6E32);box-shadow:0 26px 50px -24px rgba(0,0,0,.65)}
+[data-foto="arco"] .foto-cuadro::before{content:"";position:absolute;inset:-11px;border:1px solid rgba(184,137,74,.6);border-radius:50% 50% 8px 8px/40% 40% 8px 8px;pointer-events:none}
+[data-foto="arco"] .foto-retrato{border-radius:50% 50% 1px 1px/40% 40% 1px 1px}
+[data-foto="medallon"] .laurel{display:none}
+[data-foto="medallon"] .foto-cuadro{width:min(90%,370px);aspect-ratio:1}
+[data-foto="medallon"] .foto-retrato{display:none}
+[data-foto="medallon"] .foto-medallon{display:block;position:absolute;left:18%;top:18%;width:64%;height:64%;border-radius:50%;box-shadow:0 0 0 2px #D4AF6A,0 0 0 8px rgba(184,137,74,.14),0 20px 40px -16px rgba(0,0,0,.6)}
+[data-foto="medallon"] .foto-laurel{display:block;position:absolute;inset:0;width:100%;height:100%}
+[data-foto="impresa"] .foto-cuadro{width:min(74%,320px);aspect-ratio:4/5;padding:11px;background:#FFFDF8;transform:rotate(-2.5deg);box-shadow:0 2px 3px rgba(0,0,0,.12),0 24px 46px -18px rgba(0,0,0,.6)}
+[data-foto="impresa"] .foto-esq{display:block;position:absolute;width:30px;height:30px;background:linear-gradient(135deg,#A87A35,#F1D79A 50%,#9A6E32);filter:drop-shadow(0 1px 1px rgba(0,0,0,.25))}
+.foto-esq.e1{top:-5px;left:-5px;clip-path:polygon(0 0,100% 0,0 100%)}
+.foto-esq.e2{top:-5px;right:-5px;clip-path:polygon(0 0,100% 0,100% 100%)}
+.foto-esq.e3{bottom:-5px;left:-5px;clip-path:polygon(0 0,0 100%,100% 100%)}
+.foto-esq.e4{bottom:-5px;right:-5px;clip-path:polygon(100% 0,100% 100%,0 100%)}
+[data-foto="difuminado"] .foto-cuadro{width:min(96%,440px);aspect-ratio:4/5;-webkit-mask-image:radial-gradient(ellipse 60% 56% at 50% 44%,#000 56%,transparent 100%);mask-image:radial-gradient(ellipse 60% 56% at 50% 44%,#000 56%,transparent 100%)}
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none !important;transition:none !important}
   .js .nombre .linea{clip-path:none}
@@ -172,6 +193,7 @@ main{position:relative;z-index:2;display:flex;flex-direction:column;align-items:
       <rect width="6" height="6" fill="#EADBB9"></rect>
       <rect width="1" height="6" fill="#C99A4E" opacity=".55"></rect>
     </pattern>
+    <symbol id="laurelFoto" viewBox="0 0 300 300"><path d="M104.3,252.3 A112,112 0 0 1 94.2,52.9" fill="none" stroke="url(#lg)" stroke-width="1.6"></path><path d="M195.7,252.3 A112,112 0 0 0 205.8,52.9" fill="none" stroke="url(#lg)" stroke-width="1.6"></path><use href="#lf" transform="translate(104.3 252.3) rotate(-117.9) scale(0.9)"></use><use href="#lf" transform="translate(104.3 252.3) rotate(-193.9) scale(0.8)"></use><use href="#lf" transform="translate(88.9 243.9) rotate(-108.9) scale(0.9)"></use><use href="#lf" transform="translate(88.9 243.9) rotate(-184.9) scale(0.8)"></use><use href="#lf" transform="translate(75 233.1) rotate(-99.9) scale(0.9)"></use><use href="#lf" transform="translate(75 233.1) rotate(-175.9) scale(0.7)"></use><use href="#lf" transform="translate(62.9 220.4) rotate(-90.9) scale(0.9)"></use><use href="#lf" transform="translate(62.9 220.4) rotate(-166.9) scale(0.7)"></use><use href="#lf" transform="translate(52.9 205.9) rotate(-81.9) scale(0.8)"></use><use href="#lf" transform="translate(52.9 205.9) rotate(-157.9) scale(0.7)"></use><use href="#lf" transform="translate(45.4 190) rotate(-72.9) scale(0.8)"></use><use href="#lf" transform="translate(45.4 190) rotate(-148.9) scale(0.7)"></use><use href="#lf" transform="translate(40.4 173.1) rotate(-63.9) scale(0.8)"></use><use href="#lf" transform="translate(40.4 173.1) rotate(-139.9) scale(0.6)"></use><use href="#lf" transform="translate(38.1 155.7) rotate(-54.9) scale(0.7)"></use><use href="#lf" transform="translate(38.1 155.7) rotate(-130.9) scale(0.6)"></use><use href="#lf" transform="translate(38.6 138.1) rotate(-45.9) scale(0.7)"></use><use href="#lf" transform="translate(38.6 138.1) rotate(-121.9) scale(0.6)"></use><use href="#lf" transform="translate(41.9 120.8) rotate(-36.9) scale(0.7)"></use><use href="#lf" transform="translate(41.9 120.8) rotate(-112.9) scale(0.6)"></use><use href="#lf" transform="translate(47.8 104.3) rotate(-27.9) scale(0.6)"></use><use href="#lf" transform="translate(47.8 104.3) rotate(-103.9) scale(0.5)"></use><use href="#lf" transform="translate(56.2 88.8) rotate(-18.9) scale(0.6)"></use><use href="#lf" transform="translate(56.2 88.8) rotate(-94.9) scale(0.5)"></use><use href="#lf" transform="translate(66.9 74.9) rotate(-9.9) scale(0.6)"></use><use href="#lf" transform="translate(66.9 74.9) rotate(-85.9) scale(0.5)"></use><use href="#lf" transform="translate(79.7 62.8) rotate(-0.9) scale(0.6)"></use><use href="#lf" transform="translate(79.7 62.8) rotate(-76.9) scale(0.5)"></use><use href="#lf" transform="translate(94.2 52.9) rotate(8.1) scale(0.5)"></use><use href="#lf" transform="translate(94.2 52.9) rotate(-67.9) scale(0.4)"></use><use href="#lf" transform="translate(102.1 48.7) rotate(-25.3) scale(.55)"></use><use href="#lf" transform="translate(195.7 252.3) rotate(297.9) scale(0.9)"></use><use href="#lf" transform="translate(195.7 252.3) rotate(373.9) scale(0.8)"></use><use href="#lf" transform="translate(211.1 243.9) rotate(288.9) scale(0.9)"></use><use href="#lf" transform="translate(211.1 243.9) rotate(364.9) scale(0.8)"></use><use href="#lf" transform="translate(225 233.1) rotate(279.9) scale(0.9)"></use><use href="#lf" transform="translate(225 233.1) rotate(355.9) scale(0.7)"></use><use href="#lf" transform="translate(237.1 220.4) rotate(270.9) scale(0.9)"></use><use href="#lf" transform="translate(237.1 220.4) rotate(346.9) scale(0.7)"></use><use href="#lf" transform="translate(247.1 205.9) rotate(261.9) scale(0.8)"></use><use href="#lf" transform="translate(247.1 205.9) rotate(337.9) scale(0.7)"></use><use href="#lf" transform="translate(254.6 190) rotate(252.9) scale(0.8)"></use><use href="#lf" transform="translate(254.6 190) rotate(328.9) scale(0.7)"></use><use href="#lf" transform="translate(259.6 173.1) rotate(243.9) scale(0.8)"></use><use href="#lf" transform="translate(259.6 173.1) rotate(319.9) scale(0.6)"></use><use href="#lf" transform="translate(261.9 155.7) rotate(234.9) scale(0.7)"></use><use href="#lf" transform="translate(261.9 155.7) rotate(310.9) scale(0.6)"></use><use href="#lf" transform="translate(261.4 138.1) rotate(225.9) scale(0.7)"></use><use href="#lf" transform="translate(261.4 138.1) rotate(301.9) scale(0.6)"></use><use href="#lf" transform="translate(258.1 120.8) rotate(216.9) scale(0.7)"></use><use href="#lf" transform="translate(258.1 120.8) rotate(292.9) scale(0.6)"></use><use href="#lf" transform="translate(252.2 104.3) rotate(207.9) scale(0.6)"></use><use href="#lf" transform="translate(252.2 104.3) rotate(283.9) scale(0.5)"></use><use href="#lf" transform="translate(243.8 88.8) rotate(198.9) scale(0.6)"></use><use href="#lf" transform="translate(243.8 88.8) rotate(274.9) scale(0.5)"></use><use href="#lf" transform="translate(233.1 74.9) rotate(189.9) scale(0.6)"></use><use href="#lf" transform="translate(233.1 74.9) rotate(265.9) scale(0.5)"></use><use href="#lf" transform="translate(220.3 62.8) rotate(180.9) scale(0.6)"></use><use href="#lf" transform="translate(220.3 62.8) rotate(256.9) scale(0.5)"></use><use href="#lf" transform="translate(205.8 52.9) rotate(171.9) scale(0.5)"></use><use href="#lf" transform="translate(205.8 52.9) rotate(247.9) scale(0.4)"></use><use href="#lf" transform="translate(197.9 48.7) rotate(205.3) scale(.55)"></use><path d="M104,252 Q126,274 162,282 M196,252 Q174,274 138,282" fill="none" stroke="url(#lg)" stroke-width="2" stroke-linecap="round"></path><circle cx="150" cy="276" r="3.2" fill="url(#lg)"></circle></symbol>
     <g id="cera-sello">
       <path d="M92.4,41.8 Q95.1,50.0 93.6,58.7 Q92.1,67.4 87.8,75.5 Q83.5,83.5 75.4,87.6 Q67.3,91.7 58.6,93.5 Q50.0,95.3 41.2,93.8 Q32.5,92.3 25.8,86.6 Q19.1,80.9 13.6,74.1 Q8.1,67.4 6.1,58.7 Q4.1,50.0 5.4,41.1 Q6.8,32.1 13.1,25.8 Q19.4,19.4 26.2,14.2 Q33.0,9.1 41.5,7.9 Q50.0,6.7 59.0,6.7 Q67.9,6.7 75.3,12.0 Q82.7,17.3 86.2,25.4 Q89.7,33.5 92.4,41.8Z" fill="url(#cera)"></path>
       <circle cx="50" cy="50" r="32" fill="none" stroke="#8A6430" stroke-width="1.6" opacity=".75"></circle>
@@ -219,6 +241,14 @@ main{position:relative;z-index:2;display:flex;flex-direction:column;align-items:
     <div class="contenido">
       <div class="laurel aparece" aria-hidden="true" style="--i:0"><svg viewBox="0 0 300 300"><use href="#laurel"></use></svg></div>
       <p class="invita aparece" style="--i:1">¡Estás invitado a celebrar<br>mi graduación!</p>
+      <figure class="foto aparece" style="--i:2">
+        <div class="foto-cuadro">
+          <img class="foto-retrato" src="../fotos/fabiana-retrato.jpg" alt="Fabiana con toga y birrete de graduación" width="800" height="1000" decoding="async">
+          <img class="foto-medallon" src="../fotos/fabiana-medallon.jpg" alt="Fabiana con toga y birrete de graduación" width="640" height="640" loading="lazy" decoding="async">
+          <svg class="foto-laurel" viewBox="0 0 300 300" aria-hidden="true"><use href="#laurelFoto"></use></svg>
+          <span class="foto-esq e1" aria-hidden="true"></span><span class="foto-esq e2" aria-hidden="true"></span><span class="foto-esq e3" aria-hidden="true"></span><span class="foto-esq e4" aria-hidden="true"></span>
+        </div>
+      </figure>
       <h1 class="nombre"><span class="linea foil">Fabiana Lucila</span><span class="linea foil">Chávez Morataya</span></h1>
       <div class="filete aparece" aria-hidden="true" style="--i:6"><span></span><i></i><span></span></div>
 
@@ -254,6 +284,14 @@ main{position:relative;z-index:2;display:flex;flex-direction:column;align-items:
 
 <script>
 (() => {
+  /* ---- Propuesta de foto: se elige con #arco, #medallon, #impresa o #difuminado ---- */
+  const propuestas = ['arco', 'medallon', 'impresa', 'difuminado'];
+  function elegirFoto() {
+    const v = location.hash.slice(1);
+    document.documentElement.dataset.foto = propuestas.includes(v) ? v : 'arco';
+  }
+  elegirFoto();
+  addEventListener('hashchange', elegirFoto);
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const raiz = document.documentElement;
   raiz.classList.add('js');
