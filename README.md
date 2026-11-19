@@ -18,6 +18,7 @@ Agrega al final de la dirección `#arco`, `#medallon`, `#impresa` o `#difuminado
 
 - Sobre con sello de cera dorado que se abre al tocarlo (se abre solo a los 7 segundos).
 - Nombre escrito en caligrafía, polvo dorado y cuenta regresiva al evento.
+- Música (`musica/cancion.mp3`) que empieza al romper el sello, con entrada suave y un botón para pausarla.
 - Botones para agregar el evento a Google Calendar y abrir la ubicación en Google Maps.
 
 Es una sola página estática (`index.html`), sin dependencias. `preview.jpg` es la imagen que aparece al compartir el enlace por WhatsApp o redes.
