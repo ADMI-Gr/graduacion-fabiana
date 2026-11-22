@@ -32,7 +32,6 @@
   --f-texto:'Cormorant Garamond',Garamond,'Times New Roman',serif;
   --f-versal:'Marcellus','Cormorant Garamond',Georgia,serif;
   --foil-papel:linear-gradient(100deg,#6E4A1C 0%,#A87A35 18%,#D2AC62 28%,#8C6430 44%,#B8894A 64%,#6E4A1C 84%,#A87A35 100%);
-  --foil-tinta:linear-gradient(100deg,#5E3F16 0%,#7A5526 22%,#8C6430 32%,#6E4A1C 52%,#7A5526 74%,#5E3F16 100%);
   --fondo:radial-gradient(120% 80% at 50% 0%,#6A1729 0%,var(--vino-800) 45%,var(--vino-950) 100%);
   color-scheme:dark;
 }
@@ -165,9 +164,9 @@ main{position:relative;z-index:2;display:flex;flex-direction:column;align-items:
 .foto-esq.e4{bottom:-5px;right:-5px;clip-path:polygon(100% 0,100% 100%,0 100%)}
 [data-foto="difuminado"] .foto-cuadro{width:min(96%,440px);aspect-ratio:4/5;-webkit-mask-image:radial-gradient(ellipse 60% 56% at 50% 44%,#000 56%,transparent 100%);mask-image:radial-gradient(ellipse 60% 56% at 50% 44%,#000 56%,transparent 100%)}
 
-/* Texto de abajo en dorado, como el de arriba (más oscuro sobre el papel para que se lea) */
-.mensaje p,.fecha .mes,.fecha .anio,.hora,.rotulo,.reloj span,.reloj small{background:var(--foil-tinta);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo 12s linear infinite}
-.lugar,.mensaje .mensaje-entrada{background:var(--foil-papel);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo 12s linear infinite}
+/* Texto de abajo en dorado liso (más oscuro sobre el papel para que se lea) */
+.mensaje p,.fecha .mes,.fecha .anio,.hora,.reloj span{color:#7A5526}
+.mensaje .mensaje-entrada,.lugar{color:#8C6430}
 /* ---------- Botón de música ---------- */
 .boton-musica{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:40;width:52px;height:52px;padding:0;border-radius:50%;border:1px solid #D4AF6A;background:rgba(30,5,12,.84);color:#F3DDA6;display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 26px -10px rgba(0,0,0,.7);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:transform .3s ease}
 .boton-musica:hover{transform:scale(1.06)}
