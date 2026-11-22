@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Graduación de Fabiana</title>
-<meta name="description" content="¡Estás invitado a mi fiesta de graduación! Fabiana Lucila Chávez Morataya · 4 de diciembre de 2026 · 7:00 p. m. · Casino Migueleño">
+<meta name="description" content="¡Estás invitado a mi fiesta de graduación! Fabiana Lucila Chávez Morataya · 4 de diciembre de 2026 · 7:00 p. m. en punto · Casino Migueleño">
 <meta name="theme-color" content="#2E0712">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_SV">
 <meta property="og:url" content="https://admi-gr.github.io/graduacion-fabiana/">
 <meta property="og:title" content="¡Estás invitado a mi fiesta de graduación! · Fabiana Lucila Chávez Morataya">
-<meta property="og:description" content="4 de diciembre de 2026 · 7:00 p. m. · Casino Migueleño">
-<meta property="og:image" content="https://admi-gr.github.io/graduacion-fabiana/preview.jpg?v=3">
+<meta property="og:description" content="4 de diciembre de 2026 · 7:00 p. m. en punto · Casino Migueleño">
+<meta property="og:image" content="https://admi-gr.github.io/graduacion-fabiana/preview.jpg?v=4">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -31,6 +31,7 @@
   --f-texto:'Cormorant Garamond',Garamond,'Times New Roman',serif;
   --f-versal:'Marcellus','Cormorant Garamond',Georgia,serif;
   --foil:linear-gradient(100deg,#9A6E32 0%,#E9CD8C 18%,#FFF3CF 27%,#C99A4E 42%,#F1D79A 62%,#A87A35 82%,#E9CD8C 100%);
+  --foil-claro:linear-gradient(100deg,#C99A4E 0%,#F1D79A 22%,#FFF3CF 32%,#D9B56E 52%,#F1D79A 74%,#C99A4E 100%);
   --fondo:radial-gradient(120% 80% at 50% 0%,#6A1729 0%,var(--vino-800) 45%,var(--vino-950) 100%);
   color-scheme:dark;
 }
@@ -157,6 +158,9 @@ main{position:relative;z-index:2;max-width:760px;margin:0 auto;padding:72px 20px
 .foto-esq.e4{bottom:-5px;right:-5px;clip-path:polygon(100% 0,100% 100%,0 100%)}
 [data-foto="difuminado"] .foto-cuadro{width:min(96%,440px);aspect-ratio:4/5;-webkit-mask-image:radial-gradient(ellipse 60% 56% at 50% 44%,#000 56%,transparent 100%);mask-image:radial-gradient(ellipse 60% 56% at 50% 44%,#000 56%,transparent 100%)}
 
+/* Texto de abajo en dorado, como el de arriba */
+.mensaje p,.fecha .mes,.fecha .anio,.hora,.rotulo,.reloj span,.reloj small{background:var(--foil-claro);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo 12s linear infinite}
+.lugar,.mensaje .mensaje-entrada{background:var(--foil);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brillo 12s linear infinite}
 /* ---------- Botón de música ---------- */
 .boton-musica{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:40;width:52px;height:52px;padding:0;border-radius:50%;border:1px solid #D4AF6A;background:rgba(30,5,12,.84);color:#F3DDA6;display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 26px -10px rgba(0,0,0,.7);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:transform .3s ease}
 .boton-musica:hover{transform:scale(1.06)}
@@ -279,13 +283,13 @@ main{position:relative;z-index:2;max-width:760px;margin:0 auto;padding:72px 20px
   </header>
 
   <section class="detalles aparece" style="--i:8" aria-label="Fecha, hora y lugar">
-    <p class="sr">4 de diciembre de 2026 · 7:00 p. m. · Casino Migueleño</p>
+    <p class="sr">4 de diciembre de 2026 · 7:00 p. m. en punto · Casino Migueleño</p>
     <div class="fecha" aria-hidden="true">
       <span class="mes">diciembre</span>
       <span class="dia oro-texto">4</span>
       <span class="anio">2026</span>
     </div>
-    <p class="hora" aria-hidden="true">7:00 p. m.</p>
+    <p class="hora" aria-hidden="true">7:00 p. m. en punto</p>
     <p class="lugar" aria-hidden="true">Casino Migueleño</p>
   </section>
 
